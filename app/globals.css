@@ -317,6 +317,14 @@ h1 {
   text-transform: uppercase;
 }
 
+.service-area {
+  display: block;
+  margin: -2px 0 8px;
+  color: #f6c35d;
+  font-size: 0.75rem;
+  font-weight: 740;
+}
+
 .phone-number {
   display: block;
   width: fit-content;

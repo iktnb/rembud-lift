@@ -59,13 +59,14 @@ export default function Home() {
             <a
               className="contact-card emergency-card"
               href={EMERGENCY_PHONE.href}
-              aria-label={`Терміново зателефонувати в аварійну службу: ${EMERGENCY_PHONE.display}. Цілодобово`}
+              aria-label={`Терміново зателефонувати в аварійну службу: ${EMERGENCY_PHONE.display}. Працює цілодобово по місту Вінниця`}
             >
               <span className="contact-copy">
                 <span className="contact-heading">
                   Аварійна служба
                   <span className="always-open">Цілодобово</span>
                 </span>
+                <span className="service-area">Працюємо по місту Вінниця</span>
                 <span className="phone-number">{EMERGENCY_PHONE.display}</span>
                 <span className="contact-action">Терміново зателефонувати</span>
               </span>
