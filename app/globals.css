@@ -677,17 +677,17 @@ h1 {
   }
 
   .contact-heading {
+    position: relative;
     align-items: flex-start;
     flex-direction: column;
+    padding-left: 17px;
   }
 
   .contact-heading::before {
     position: absolute;
-    margin-top: 5px;
-  }
-
-  .contact-heading {
-    padding-left: 17px;
+    top: 0.45em;
+    left: 0;
+    margin: 0;
   }
 
   .dock-action {
