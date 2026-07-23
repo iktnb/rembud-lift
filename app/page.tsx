@@ -85,21 +85,6 @@ export default function Home() {
           <strong>Працюємо для вашої безпеки</strong>
         </footer>
       </div>
-
-      <a
-        className="emergency-dock"
-        href={EMERGENCY_PHONE.href}
-        aria-label={`Зателефонувати в аварійну службу: ${EMERGENCY_PHONE.display}. Цілодобово`}
-      >
-        <span className="dock-copy">
-          <strong>Аварійна · 24/7</strong>
-          <span>{EMERGENCY_PHONE.display}</span>
-        </span>
-        <span className="dock-action">
-          <span aria-hidden="true">☎</span>
-          Дзвонити
-        </span>
-      </a>
     </>
   );
 }

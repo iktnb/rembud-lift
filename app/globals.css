@@ -262,8 +262,7 @@ h1 {
   transform: translateY(1px);
 }
 
-.contact-card:focus-visible,
-.emergency-dock:focus-visible {
+.contact-card:focus-visible {
   outline: 4px solid var(--amber);
   outline-offset: 4px;
 }
@@ -447,10 +446,6 @@ h1 {
   font-weight: 720;
 }
 
-.emergency-dock {
-  display: none;
-}
-
 @media (max-width: 1080px) {
   .hero {
     grid-template-columns: minmax(0, 1fr) minmax(390px, 0.9fr);
@@ -476,7 +471,7 @@ h1 {
   }
 
   .page-shell {
-    padding: 24px 28px calc(124px + env(safe-area-inset-bottom));
+    padding: 24px 28px calc(30px + env(safe-area-inset-bottom));
     overflow: visible;
   }
 
@@ -498,70 +493,11 @@ h1 {
     width: 100%;
     max-width: 680px;
   }
-
-  .emergency-dock {
-    position: fixed;
-    z-index: 20;
-    right: max(14px, env(safe-area-inset-right));
-    bottom: max(14px, env(safe-area-inset-bottom));
-    left: max(14px, env(safe-area-inset-left));
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 74px;
-    padding: 10px 12px 10px 18px;
-    gap: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 19px;
-    color: var(--white);
-    background: var(--navy-900);
-    box-shadow: 0 18px 48px rgba(7, 26, 44, 0.3);
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .dock-copy {
-    display: grid;
-    min-width: 0;
-    gap: 3px;
-  }
-
-  .dock-copy strong {
-    color: #f6c35d;
-    font-size: 0.6875rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .dock-copy span {
-    overflow: hidden;
-    font-size: clamp(1.05rem, 3.4vw, 1.25rem);
-    font-weight: 760;
-    font-variant-numeric: tabular-nums;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .dock-action {
-    display: inline-flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-    min-width: 118px;
-    min-height: 50px;
-    padding: 0 16px;
-    gap: 8px;
-    border-radius: 13px;
-    color: var(--navy-950);
-    background: var(--amber);
-    font-size: 0.875rem;
-    font-weight: 800;
-  }
 }
 
 @media (max-width: 560px) {
   .page-shell {
-    padding: 20px 18px calc(120px + env(safe-area-inset-bottom));
+    padding: 20px 18px calc(28px + env(safe-area-inset-bottom));
   }
 
   .site-header {
@@ -689,24 +625,6 @@ h1 {
     left: 0;
     margin: 0;
   }
-
-  .dock-action {
-    min-width: 84px;
-    padding-inline: 10px;
-  }
-
-  .dock-action span {
-    display: none;
-  }
-
-  .emergency-dock {
-    padding-left: 14px;
-    gap: 8px;
-  }
-
-  .dock-copy span {
-    font-size: 0.96rem;
-  }
 }
 
 @media (max-height: 760px) and (min-width: 861px) {
@@ -747,13 +665,11 @@ h1 {
 }
 
 @media (forced-colors: active) {
-  .contact-card,
-  .emergency-dock {
+  .contact-card {
     border: 2px solid CanvasText;
   }
 
-  .contact-card:focus-visible,
-  .emergency-dock:focus-visible {
+  .contact-card:focus-visible {
     outline-color: Highlight;
   }
 }
