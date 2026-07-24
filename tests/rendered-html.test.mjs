@@ -22,7 +22,7 @@ async function render() {
   );
 }
 
-test("renders the elevator company holding page with direct phone links", async () => {
+test("renders the elevator company holding page with direct contact links", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -33,8 +33,10 @@ test("renders the elevator company holding page with direct phone links", async 
   assert.match(html, /Сайт у розробці/);
   assert.match(html, /href="tel:\+380674560292"/);
   assert.match(html, /href="tel:\+380674305971"/);
+  assert.match(html, /href="mailto:rembudlift@gmail\.com"/);
   assert.match(html, /\+380 \(67\) 456 02 92/);
   assert.match(html, /\+380 \(67\) 430 59 71/);
+  assert.match(html, /rembudlift@gmail\.com/);
   assert.match(html, /Цілодобово/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Building your site/);
 });

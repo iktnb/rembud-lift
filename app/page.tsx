@@ -8,6 +8,11 @@ const EMERGENCY_PHONE = {
   href: "tel:+380674305971",
 };
 
+const CONTACT_EMAIL = {
+  display: "rembudlift@gmail.com",
+  href: "mailto:rembudlift@gmail.com",
+};
+
 export default function Home() {
   return (
     <>
@@ -69,6 +74,19 @@ export default function Home() {
                 <span className="service-area">Працюємо по місту Вінниця</span>
                 <span className="phone-number">{EMERGENCY_PHONE.display}</span>
                 <span className="contact-action">Терміново зателефонувати</span>
+              </span>
+              <span className="call-arrow" aria-hidden="true" />
+            </a>
+
+            <a
+              className="contact-card email-card"
+              href={CONTACT_EMAIL.href}
+              aria-label={`Написати на електронну пошту: ${CONTACT_EMAIL.display}`}
+            >
+              <span className="contact-copy">
+                <span className="contact-heading">Електронна пошта</span>
+                <span className="email-address">{CONTACT_EMAIL.display}</span>
+                <span className="contact-action">Написати нам</span>
               </span>
               <span className="call-arrow" aria-hidden="true" />
             </a>
