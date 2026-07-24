@@ -51,10 +51,14 @@ export default function Home() {
             <a
               className="contact-card office-card"
               href={OFFICE_PHONE.href}
-              aria-label={`Зателефонувати в офіс: ${OFFICE_PHONE.display}`}
+              aria-label={`Зателефонувати в офіс: ${OFFICE_PHONE.display}. Офіс працює з понеділка по п’ятницю з 09:00 до 17:00. Субота та неділя — вихідні`}
             >
               <span className="contact-copy">
                 <span className="contact-heading">Офіс</span>
+                <span className="office-hours">
+                  <strong>Пн–Пт · 09:00–17:00</strong>
+                  <span>Сб–Нд — вихідні</span>
+                </span>
                 <span className="phone-number">{OFFICE_PHONE.display}</span>
                 <span className="contact-action">Зателефонувати в офіс</span>
               </span>

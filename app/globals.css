@@ -325,6 +325,23 @@ h1 {
   font-weight: 740;
 }
 
+.office-hours {
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+  margin: -2px 0 9px;
+  gap: 3px;
+  color: var(--muted);
+  font-size: 0.6875rem;
+  font-weight: 680;
+}
+
+.office-hours strong {
+  color: var(--navy-800);
+  font-size: 0.75rem;
+  font-weight: 780;
+}
+
 .phone-number {
   display: block;
   width: fit-content;
