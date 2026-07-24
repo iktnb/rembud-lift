@@ -37,7 +37,7 @@ test("renders the elevator company holding page with direct contact links", asyn
   assert.match(html, /\+380 \(67\) 456 02 92/);
   assert.match(html, /\+380 \(67\) 430 59 71/);
   assert.match(html, /rembudlift@gmail\.com/);
-  assert.match(html, /Пн–Пт 09:00–17:00 · Сб–Нд вих\./);
+  assert.match(html, /Пн–Пт 09:00–17:00 · Сб–Нд вихідні/);
   assert.match(html, /Цілодобово/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Building your site/);
 });

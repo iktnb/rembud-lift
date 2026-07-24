@@ -55,7 +55,7 @@ export default function Home() {
             >
               <span className="contact-copy">
                 <span className="contact-heading">Офіс</span>
-                <span className="office-hours">Пн–Пт 09:00–17:00 · Сб–Нд вих.</span>
+                <span className="office-hours">Пн–Пт 09:00–17:00 · Сб–Нд вихідні</span>
                 <span className="phone-number">{OFFICE_PHONE.display}</span>
                 <span className="contact-action">Зателефонувати в офіс</span>
               </span>
