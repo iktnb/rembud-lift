@@ -69,7 +69,7 @@ export default function Home() {
             >
               <span className="contact-copy">
                 <span className="contact-heading">
-                  Аварійна служба
+                  <span className="heading-label">Аварійна служба</span>
                   <span className="always-open">Цілодобово</span>
                 </span>
                 <span className="service-area">Працюємо по місту Вінниця</span>
